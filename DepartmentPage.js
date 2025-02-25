@@ -9,10 +9,10 @@ const DepartmentPage = () => {
   const [editDepartmentId, setEditDepartmentId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Add or Update Department
+  
   const handleSubmit = () => {
     if (editDepartmentId) {
-      // Update existing department
+      
       const updatedDepartments = departments.map((dept) =>
         dept.id === editDepartmentId
           ? { ...dept, name: departmentName }
@@ -20,7 +20,7 @@ const DepartmentPage = () => {
       );
       setDepartments(updatedDepartments);
     } else {
-      // Add new department
+      
       const newDepartment = {
         id: Date.now().toString(),
         name: departmentName,
@@ -33,7 +33,7 @@ const DepartmentPage = () => {
     setEditDepartmentId(null);
   };
 
-  // Edit Department
+  
   const handleEdit = (id) => {
     const department = departments.find((dept) => dept.id === id);
     setDepartmentName(department.name);
@@ -41,13 +41,13 @@ const DepartmentPage = () => {
     setModalVisible(true);
   };
 
-  // Delete Department
+  
   const handleDelete = (id) => {
     const updatedDepartments = departments.filter((dept) => dept.id !== id);
     setDepartments(updatedDepartments);
   };
 
-  // Filter Departments based on search query
+  
   const filteredDepartments = departments.filter((dept) =>
     dept.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -68,7 +68,7 @@ const DepartmentPage = () => {
         </button>
       </div>
 
-      {/* Department Table */}
+     
       <table className="department-table">
         <thead>
           <tr>
@@ -95,7 +95,7 @@ const DepartmentPage = () => {
         </tbody>
       </table>
 
-      {/* Add/Edit Department Modal */}
+      
       {modalVisible && (
         <div className="modal-overlay">
           <div className="modal-content">
