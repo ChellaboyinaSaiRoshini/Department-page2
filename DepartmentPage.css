@@ -1,6 +1,6 @@
 .department-page {
   padding: 20px;
-  max-width: 1000px;
+  max-width: 1200px; /* Increased max width */
   margin: auto;
 }
 
@@ -11,14 +11,15 @@
 }
 
 .search-filter input {
-  padding: 8px;
-  width: 200px;
+  padding: 10px;
+  width: 250px; /* Increased width */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .add-department-btn {
-  padding: 10px 15px;
+  padding: 12px 20px;
+  font-size: 16px;
   background-color: #33ffbb;
   color: black;
   border: none;
@@ -30,38 +31,44 @@
   background-color: #2dcf9d;
 }
 
+/* Increased table size */
 .department-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  font-size: 18px; /* Increased font size */
 }
 
-.department-table th, .department-table td {
+.department-table th,
+.department-table td {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 15px; /* Increased padding */
   text-align: left;
 }
 
 .department-table th {
   background-color: black;
   color: white;
+  font-size: 20px; /* Increased header font size */
 }
 
 .edit-btn {
-  padding: 5px 10px;
-  margin-right: 5px;
+  padding: 8px 15px;
+  margin-right: 8px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
   background-color: yellow;
   color: black;
 }
 
 .delete-btn {
-  padding: 5px 10px;
+  padding: 8px 15px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
   background-color: red;
   color: white;
 }
@@ -88,24 +95,26 @@
 
 .modal-content {
   background: white;
-  padding: 30px;
+  padding: 30px; /* Reduced padding */
   border-radius: 10px;
-  width: 500px;
+  width: 450px; /* Decreased modal width */
   text-align: center;
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.modal-content input, .modal-content textarea {
+.modal-content input,
+.modal-content textarea {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 8px; /* Reduced input padding */
+  margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .submit-btn {
-  padding: 10px 15px;
+  padding: 10px 15px; /* Adjusted button size */
+  font-size: 14px; /* Reduced font size */
   background-color: #33ffbb;
   color: black;
   border: none;
@@ -119,11 +128,11 @@
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 8px;
+  right: 12px;
   border: none;
   background: none;
-  font-size: 20px;
+  font-size: 18px; /* Slightly smaller close button */
   cursor: pointer;
 }
 
@@ -139,12 +148,24 @@
   }
 
   .modal-content {
-    width: 90%;
+    width: 80%; /* Adjusted for smaller screens */
     padding: 20px;
   }
 
-  .department-table th, .department-table td {
+  .department-table th,
+  .department-table td {
     padding: 8px;
     font-size: 14px;
   }
 }
+
+
+
+  
+  
+
+
+
+
+
+    
